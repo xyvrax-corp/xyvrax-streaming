@@ -16,7 +16,11 @@
 body {
   margin: 0;
   font-family: "Inter", "Poppins", sans-serif;
-  background: linear-gradient(180deg, #0b0b0b 0%, #111 100%);
+
+  /* Dégradé beaucoup plus subtil : léger passage du noir profond au gris anthracite */
+  background: linear-gradient(180deg, #0b0b0b 0%, #121212 100%);
+  background-attachment: fixed; /* reste stable au scroll */
+  
   color: var(--text);
   overflow-x: hidden;
 }
