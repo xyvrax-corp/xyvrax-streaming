@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vidéo - Conception de fonctions analogiques</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="video-page">
+  <!-- Barre retour -->
+  <header class="video-header">
+    <a href="index.html" class="back-btn">← Retour</a>
+  </header>
+
+  <!-- Lecteur vidéo -->
+  <main id="videoContainer" class="video-container">
+    <div id="videoPlayer" class="player"></div>
+    <div class="video-meta">
+      <h1 id="videoTitle"></h1>
+      <p id="videoDesc"></p>
+      <p><strong>Catégorie :</strong> <span id="videoCat"></span></p>
+      <p><strong>Date :</strong> <span id="videoDate"></span></p>
+      <button id="favToggle">❤ Ajouter aux favoris</button>
+    </div>
+  </main>
+
+  <script src="video.js"></script>
+</body>
+</html>

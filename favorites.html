@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favoris - Conception de fonctions analogiques</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ======== MENU LATÉRAL ======== -->
+  <nav class="sidebar" id="sidebar">
+    <div class="logo">🎬 Mon VOD</div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="favorites.html" class="active">Favoris</a></li>
+      <li><a href="about.html">À propos</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======== CONTENU PRINCIPAL ======== -->
+  <div class="main-content">
+    <header>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <input type="search" id="searchInput" placeholder="Rechercher un favori...">
+    </header>
+
+    <div class="filters">
+      <button class="filter-btn active" data-cat="all">Tout</button>
+      <button class="filter-btn" data-cat="films">Films</button>
+      <button class="filter-btn" data-cat="series">Séries</button>
+    </div>
+
+    <main id="catalogue" class="catalogue"></main>
+  </div>
+
+  <template id="thumbTemplate">
+    <article class="thumb">
+      <img class="thumb-img" alt="">
+      <div class="thumb-info">
+        <h3 class="thumb-title"></h3>
+        <p class="thumb-cat"></p>
+      </div>
+    </article>
+  </template>
+
+  <script src="favorites.js"></script>
+</body>
+</html>

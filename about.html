@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>À propos - Conception de fonctions analogiques</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======== MENU LATÉRAL ======== -->
+  <nav class="sidebar" id="sidebar">
+    <div class="logo">🎬 Mon VOD</div>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="favorites.html">Favoris</a></li>
+      <li><a href="about.html" class="active">À propos</a></li>
+    </ul>
+  </nav>
+
+  <!-- ======== CONTENU PRINCIPAL ======== -->
+  <div class="main-content">
+    <header>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <input type="search" id="searchInput" placeholder="Rechercher..." disabled>
+    </header>
+
+    <main class="about-container">
+      <h1>À propos</h1>
+      <p>
+        Ce site VOD est un projet personnel permettant de centraliser mes vidéos hébergées sur Vimeo.
+        Les vidéos sont ajoutées manuellement dans le fichier <code>videos.json</code>.
+      </p>
+      <p>
+        Ce site ne contient aucun backend et est entièrement statique — il peut être hébergé gratuitement sur Netlify.
+      </p>
+      <p>
+        Le style de navigation et de catalogue est conservé afin que l'expérience reste cohérente avec le reste du site.
+      </p>
+    </main>
+  </div>
+
+  <script>
+    // Menu mobile
+    const menuToggle = document.getElementById("menuToggle");
+    const sidebar = document.getElementById("sidebar");
+
+    menuToggle.addEventListener("click", () => {
+      sidebar.classList.toggle("open");
+    });
+  </script>
+
+</body>
+</html>

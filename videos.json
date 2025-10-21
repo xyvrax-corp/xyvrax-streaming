@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1127941574",
+    "vimeo_url": "https://vimeo.com/1127941574",
+    "title": "Film de démonstration",
+    "description": "Un film exemple hébergé sur Vimeo.",
+    "category": "films",
+    "published": "2023-06-12",
+    "thumb": "https://i.vimeocdn.com/video/123456789_640.jpg"
+  },
+  {
+    "id": "123456789",
+    "vimeo_url": "https://vimeo.com/123456789",
+    "title": "Court métrage inspirant",
+    "description": "Un court métrage artistique tourné à Paris.",
+    "category": "series",
+    "published": "2024-02-15",
+    "thumb": "https://i.vimeocdn.com/video/987654321_640.jpg"
+  }
+]
